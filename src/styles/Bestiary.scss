@@ -1,0 +1,51 @@
+.section-bestiary {
+	position: fixed;
+	top: 185px;
+	width: 100vw;
+	height: calc(100vh - 185px);
+	display: flex;
+	z-index: -1;
+	flex-wrap: wrap;
+	padding: 5px;
+	justify-content: space-evenly;
+	overflow: auto;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 200px;
+		height: 200px;
+		background-color: #23005e;
+		border-radius: 10px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		margin: 5px;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #05176b;
+			cursor: pointer;
+		}
+
+		img {
+			height: 155px;
+			max-width: 190px;
+			object-fit: contain;
+			image-rendering: pixelated;
+			margin: 15px;
+		}
+
+		span {
+			width: calc(100% - 20px);
+			text-align: center;
+			background-color: #4d0675;
+			margin: 5px;
+			color: white;
+			font-family: "Vollkorn SC", serif;
+			font-weight: 400;
+			font-size: 15px;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+
+.section-header {
+	background-color: #0a0447;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100vw;
+
+	div {
+		display: flex;
+		flex-direction: column;
+
+		span {
+			font-family: "EB Garamond", sans-serif;
+			font-weight: 500;
+			font-size: 60px;
+			margin: -15px;
+			color: white;
+
+			&:first-child {
+				font-family: "Vollkorn SC", sans-serif;
+				font-weight: 1000;
+				font-size: 30px;
+				margin-top: 0;
+			}
+
+			&:last-child {
+				font-family: "Playfair Display SC", sans-serif;
+				font-weight: 1000;
+				font-style: italic;
+				font-size: 55px;
+				letter-spacing: 0.21em;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	input {
+		width: 100px;
+		height: 30px;
+		border: none;
+		border-radius: 40px;
+		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0);
+		text-align: center;
+		font-family: "EB Garamond", serif;
+		font-weight: 600;
+		font-size: 20px;
+		background-color: #0a0447;
+		color: white;
+		outline: none;
+		transition: 0.3s ease-in-out;
+
+		&:focus {
+			width: 500px;
+			height: 40px;
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-color: #23005e;
+		}
+	}
+}
